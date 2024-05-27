@@ -3,7 +3,7 @@
 import getUser from '@/utils/get-user';
 import { useQuery } from '@tanstack/react-query';
 
-export default function Header() {
+export default function WelcomeUser() {
   const { data: user, isLoading } = useQuery({
     queryKey: ['user'],
     queryFn: getUser,
@@ -13,5 +13,5 @@ export default function Header() {
 
   if (!user) return <div>Not logged in</div>;
 
-  return <div>Next.js | You logged as {user?.name}</div>;
+  return <h1>Welcome to profile {user?.name}!</h1>;
 }

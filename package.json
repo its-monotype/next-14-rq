@@ -9,11 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@tanstack/react-query": "^5.4.3",
-    "@tanstack/react-query-devtools": "^5.4.3",
-    "next": "14.0.1",
+    "@tabler/icons-react": "^2.40.0",
+    "@tanstack/react-query": "^5.7.1",
+    "@tanstack/react-query-devtools": "^5.7.1",
+    "@tanstack/react-query-next-experimental": "^5.7.1",
+    "next": "14.0.2-canary.12",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "reshaped": "^2.5.8"
   },
   "devDependencies": {
     "@types/node": "^20",

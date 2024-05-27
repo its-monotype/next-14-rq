@@ -1,5 +1,5 @@
-import { Header } from '@/components/header';
-import { Providers } from '@/components/providers';
+import Header from '@/components/header';
+import Providers from '@/components/providers';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
@@ -17,7 +17,7 @@ export default async function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" data-rs-theme="reshaped" data-rs-color-mode="dark">
       <body className={inter.className}>
         <Providers>
           <Header />
